@@ -12,7 +12,7 @@ export default function Blog({posts}) {
         <h1 className="heading"></h1>
         <div className={styles.grid}>
           {posts?.map(post => (
-            <Post post={post.attributes}></Post>
+            <Post key={post.id} post={post.attributes}></Post>
           ))}
         </div>
       </main>
